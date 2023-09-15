@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root { 
+    --color-1: #FBF0B2;
+    --color-2: #FFC7EA;
+    --color-3: #071952;
+    --color-4: #CAEDFF;
+
+}
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-3);
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'PT Serif', serif;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+}
+#heading_con {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+}
+#heading_con > h1 {
+    font-size: 6rem;
+    color: #F2F7A1;
+}
+.dices {
+    position: relative;
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 20%;
+}
+.dice {
+    width: 400px;
+    height: 400px;
+    background-color: darkred;
+    border-radius: 40px;
+}
+.dice h5 {
+    text-align: center;
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 2.5rem;
+    transform: translateY(-80px);
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 40px;
+}
+.dotcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#roll_btn {
+    background-color: #088395;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: absolute;
+    cursor: pointer;
+    border: 5px solid white;
+    animation: spin 3s infinite;
+}
+#roll_btn > h2 {
+    font-size: 1vw;
+    font-family: 'PT Serif', serif;
+    color: white;
+    text-align: center;
+}
+
+@keyframes spin {
+    0% {
+        border-top: 5px solid chocolate;
+    }
+    33% {
+        border-right: 5px solid chocolate;
+    }
+    66% {
+        border-bottom: 5px solid chocolate;
+    }
+    100% {
+        border-left: 5px solid chocolate;
+    }
+}
