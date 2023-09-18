@@ -246,3 +246,8 @@ html {
         transform: translateY(-40px);
     }
 }
+
+.press {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}

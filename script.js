@@ -322,9 +322,25 @@ function winningStatus() {
         head.textContent = "Player 2 won🎉";
     }
 }
+function rollingSound() {
+    var dicetone = new Audio("./sound/dice.mp3");
+    return dicetone.play();
+}
+
+function addAnimation(){
+    roll.classList.add("press");
+    setTimeout(() => {
+        roll.classList.remove("press")
+    }, 100);
+}
+
+
 
 roll.addEventListener("click", function(){
+    rollingSound();
     rollDice0();
     rollDice1();
     winningStatus();
+    addAnimation();
 })
+
