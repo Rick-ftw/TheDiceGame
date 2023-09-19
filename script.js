@@ -331,7 +331,7 @@ function addAnimation(){
     roll.classList.add("press");
     setTimeout(() => {
         roll.classList.remove("press")
-    }, 100);
+    }, 150);
 }
 
 
