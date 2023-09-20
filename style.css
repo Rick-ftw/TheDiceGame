@@ -221,6 +221,20 @@ html {
 }
 @media (max-width: 450px) {
 
+    .dice {
+        width: 150px;
+        height: 150px;
+    }
+
+    .box {
+        padding: 0 34px;
+        gap: 5px;
+    }
+    .dot {
+        height: 26px;
+        width: 26px;
+    }
+
     #page1 {
         height: 100%;
     }
@@ -236,7 +250,7 @@ html {
         justify-content: flex-start;
         padding-top: 20px;
         gap: 60px;
-        margin-top: 4%;
+        margin-top: 15%;
     }
 
     #roll_btn {
@@ -251,7 +265,6 @@ html {
         transform: translateY(-40px);
     }
 }
-
 .press {
     box-shadow: 0 3px 4px 0 #DBEDF3;
     opacity: 0.5;
